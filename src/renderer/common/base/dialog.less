@@ -1,0 +1,37 @@
+.dialog-wrapper {
+    position: fixed;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .4);
+}
+
+.dialog {
+    display: block;
+    width: 400px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.dialog-fade-enter-active,
+.dialog-fade-leave-active {
+    transition: opacity .2s ease;
+    .dialog {
+        transition: transform .2s ease;
+    }
+}
+
+.dialog-fade-enter,
+.dialog-fade-leave-to {
+    opacity: 0;
+    .dialog {
+        transform: translateY(-30px);
+    }
+}

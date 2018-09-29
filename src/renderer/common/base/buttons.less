@@ -1,0 +1,101 @@
+//
+// Buttons.css
+// --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: default;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.06);
+  -webkit-app-region: no-drag;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Normal buttons
+.btn-default {
+  color: #333;
+  border-color: #c2c0c2 #c2c0c2 #a19fa1;
+  background-color: #fcfcfc;
+  background-image: linear-gradient(to bottom,#fcfcfc 0,#f1f1f1 100%);
+
+  &:active {
+    background-color: #ddd;
+    background-image: none;
+  }
+}
+
+.btn-dropdown:after {
+  margin-left: 5px;
+  font-family: "iconfont" !important;
+  content: '\e600';
+  font-size: 11px;
+}
+
+// Button variations
+.btn-primary,
+.btn-positive,
+.btn-negative,
+.btn-warning {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+// For primary buttons
+.btn-primary {
+  border-color: #388df8 #388df8 #0866dc;
+  background-color: #6eb4f7;
+  background-image: linear-gradient(to bottom,#6eb4f7 0,#1a82fb 100%);
+
+  &:active {
+    background-image: linear-gradient(to bottom,#3e9bf4 0,#0469de 100%);
+  }
+}
+
+// For positive buttons
+.btn-positive {
+  border-color: #29a03b #29a03b #248b34;
+  background-color: #5bd46d;
+  background-image: linear-gradient(to bottom,#5bd46d 0,#29a03b 100%);
+
+  &:active {
+    background-color: #34c84a;
+    background-image: linear-gradient(to bottom,#34c84a 0,#248b34 100%);
+  }
+}
+
+// For negative actions
+.btn-negative {
+  border-color: #fb2f29 #fb2f29 #fb1710;
+  background-color: #fd918d;
+  background-image: linear-gradient(to bottom,#fd918d 0,#fb2f29 100%);
+
+  &:active {
+    background-color: #fc605b;
+    background-image: linear-gradient(to bottom,#fc605b 0,#fb1710 100%);
+  }
+}
+
+// For warning actions
+.btn-warning {
+  border-color: #fcaa0e #fcaa0e #ee9d02;
+  background-color: #fece72;
+  background-image: linear-gradient(to bottom,#fece72 0,#fcaa0e 100%);
+
+  &:active {
+    background-color: #fdbc40;
+    background-image: linear-gradient(to bottom,#fdbc40 0,#ee9d02 100%);
+  }
+}

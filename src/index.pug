@@ -1,0 +1,16 @@
+html
+  head
+    meta(charset='utf-8')
+    title iMark
+    link(href='./renderer.css' rel='stylesheet')
+    style(type='text/css').
+      !{htmlWebpackPlugin.options.inlineStyle}
+    if htmlWebpackPlugin.options.nodeModules
+      script.
+        require('module').globalPaths.push('#{htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\')}')
+  body
+    imark-styles
+    imark-app
+    script.
+      !{htmlWebpackPlugin.options.inlineScript}
+    script(src='./renderer.js')

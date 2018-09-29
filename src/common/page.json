@@ -1,0 +1,24 @@
+{
+  "initialize": {
+    "title": "iMark",
+    "width": 800,
+    "height": 400,
+    "resizable": false,
+    "show": false,
+    "center": true,
+    "frame": false,
+    "useContentSize": true
+  },
+  "workspace": {
+    "title": "iMark",
+    "width": 1280,
+    "height": 850,
+    "minWidth": 1120,
+    "minHeight": 768,
+    "resizable": true,
+    "show": false,
+    "center": true,
+    "frame": false,
+    "useContentSize": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "layout": {
+    "sidebar": {
+      "show": true,
+      "width": 160,
+      "active": ""
+    },
+    "list": {
+      "show": true,
+      "width": 280,
+      "active": ""
+    },
+    "status": {
+      "show": true,
+      "width": 200
+    },
+    "preview": {
+      "show": false
+    }
+  }
+}

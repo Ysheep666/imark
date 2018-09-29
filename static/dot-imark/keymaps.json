@@ -1,0 +1,41 @@
+{
+  "imark-app": {
+    "command+z": "core:undo",
+    "shift+command+z": "core:redo",
+    "command+x": "core:cut",
+    "command+c": "core:copy",
+    "command+v": "core:paste",
+    "command+a": "core:select-all",
+    "command+w": "application:hide",
+    "command+m": "application:minimize"
+  },
+  "imark-workspace": {
+    "command+1": "workspace:toggle-sidebar",
+    "command+2": "workspace:toggle-list",
+    "command+3": "workspace:toggle-edit",
+    "command+4": "workspace:toggle-preview"
+  },
+  "imark-workspace .main .sidebar": {
+    "command+r": "workspace:rename-folder",
+    "shift+command+r": "workspace:add-folder-tags"
+  },
+  "imark-workspace .main .editor": {
+    "ctrl+1": "workspace:format-h1",
+    "ctrl+2": "workspace:format-h2",
+    "ctrl+3": "workspace:format-h3",
+    "ctrl+4": "workspace:format-h4",
+    "ctrl+5": "workspace:format-h5",
+    "alt+command+s": "workspace:format-hr",
+    "command+b": "workspace:format-bold",
+    "command+i": "workspace:format-italic",
+    "command+-": "workspace:format-strikethrough",
+    "ctrl+u": "workspace:format-list",
+    "ctrl+shift+o": "workspace:format-ordered-list",
+    "shift+command+b": "workspace:format-blockquote",
+    "command+k": "workspace:format-code",
+    "shift+command+k": "workspace:format-block-code",
+    "ctrl+shift+l": "workspace:format-link",
+    "ctrl+shift+i": "workspace:format-image",
+    "shift+command+i": "workspace:format-innert-image"
+  }
+}

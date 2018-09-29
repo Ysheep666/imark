@@ -1,0 +1,121 @@
+{
+  "menu": [
+    {
+      "label": "iMark",
+      "submenu": [
+        { "label": "关于 iMark", "command": "application:about" },
+        { "type": "separator" },
+        { "label": "偏好设置...", "command": "application:open-preferences" },
+        { "type": "separator" },
+        { "label": "隐藏 iMark", "command": "application:hide" },
+        { "label": "隐藏其他", "command": "application:hide-other-applications" },
+        { "label": "全部显示", "command": "application:unhide-all-applications" },
+        { "type": "separator" },
+        { "label": "退出", "command": "application:quit" }
+      ]
+    },
+    {
+      "label": "编辑",
+      "submenu": [
+        { "label": "撤销", "command": "core:undo" },
+        { "label": "恢复", "command": "core:redo" },
+        { "type": "separator" },
+        { "label": "剪切", "command": "core:cut" },
+        { "label": "复制", "command": "core:copy" },
+        { "label": "粘贴", "command": "core:paste" },
+        { "label": "全选", "command": "core:select-all" }
+      ]
+    },
+    {
+      "label": "版式",
+      "submenu": [
+        {
+          "label": "标题",
+          "position": "endof=titles",
+          "submenu": [
+            { "label": "1 号标题", "command": "workspace:format-h1" },
+            { "label": "2 号标题", "command": "workspace:format-h2" },
+            { "label": "3 号标题", "command": "workspace:format-h3" },
+            { "label": "4 号标题", "command": "workspace:format-h4" },
+            { "label": "5 号标题", "command": "workspace:format-h5" }
+          ]
+        },
+        { "label": "分行隔符", "position": "endof=titles", "command": "workspace:format-hr" },
+        { "label": "粗体", "position": "endof=format", "command": "workspace:format-bold" },
+        { "label": "斜体", "position": "endof=format", "command": "workspace:format-italic" },
+        { "label": "删除线", "position": "endof=format", "command": "workspace:format-strikethrough" },
+        { "label": "列表", "position": "endof=list", "command": "workspace:format-list" },
+        { "label": "排序列表", "position": "endof=list", "command": "workspace:format-ordered-list" },
+        { "label": "引用", "position": "endof=code", "command": "workspace:format-blockquote" },
+        { "label": "代码", "position": "endof=code", "command": "workspace:format-code" },
+        { "label": "代码块", "position": "endof=code", "command": "workspace:format-block-code" },
+        { "label": "链接", "position": "endof=insert", "command": "workspace:format-link" },
+        { "label": "图片", "position": "endof=insert", "command": "workspace:format-image" },
+        { "label": "插入图片", "position": "endof=insert", "command": "workspace:format-innert-image" }
+      ]
+    },
+    {
+      "label": "视图",
+      "submenu": [
+        { "label": "目录", "command": "workspace:toggle-sidebar" },
+        { "label": "列表", "command": "workspace:toggle-list" },
+        { "label": "仅限编辑器", "command": "workspace:toggle-edit" },
+        { "type": "separator" },
+        { "label": "预览", "command": "workspace:toggle-preview" }
+      ]
+    },
+    {
+      "label": "窗口",
+      "submenu": [
+        { "label": "关闭", "command": "application:hide" },
+        { "label": "最小化", "command": "application:minimize" },
+        { "type": "separator" },
+        { "label": "前置窗口", "command": "application:unhide-all-applications" }
+      ]
+    },
+    {
+      "label": "帮助",
+      "submenu": [
+        { "label": "切换开发者工具", "command": "window:toggle-dev-tools" }
+      ]
+    }
+  ],
+  "context-menu": {
+    "layout": [
+      { "label": "目录", "command": "workspace:toggle-sidebar" },
+      { "label": "列表", "command": "workspace:toggle-list" },
+      { "label": "仅限编辑器", "command": "workspace:toggle-edit" },
+      { "type": "separator" },
+      { "label": "预览", "command": "workspace:toggle-preview" }
+    ],
+    "import": [
+      { "label": "创建新资源库...", "command": "workspace:create-project" },
+      { "label": "载入其他资源库...", "command": "workspace:import-project" }
+    ],
+    "folder-options": [
+      { "label": "重新命名", "command": "workspace:rename-folder" },
+      { "label": "自动添加文档标签", "command": "workspace:add-folder-tags" },
+      { "type": "separator" },
+      { "label": "删除文件夹", "command": "workspace:remove-folder" }
+    ],
+    "doc-options": [
+      { "label": "置顶", "command": "workspace:top-doc" },
+      { "label": "拷贝", "command": "workspace:copy-doc" },
+      {
+        "label": "拷贝为",
+        "submenu": [
+          { "label": "纯文本", "command": "workspace:copy-doc-toText" },
+          { "label": "富文本", "command": "workspace:copy-doc-toRich" },
+          { "label": "HTML", "command": "workspace:copy-doc-toHtml" },
+          { "label": "Markdown", "command": "workspace:copy-doc-toRich" }
+        ]
+      },
+      { "type": "separator" },
+      { "label": "移动到废纸篓", "command": "workspace:trash-doc" }
+    ],
+    "doc-trash-options": [
+      { "label": "放回原处", "command": "workspace:undo-doc" },
+      { "label": "永久删除", "command": "workspace:remove-doc" }
+    ]
+  }
+}

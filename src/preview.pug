@@ -1,0 +1,12 @@
+html
+  head
+    meta(charset='utf-8')
+    title 预览
+    link(href='./preview.css' rel='stylesheet')
+    if htmlWebpackPlugin.options.nodeModules
+      script.
+        require('module').globalPaths.push('#{htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\')}')
+  body
+    imark-styles
+    div(class="preview")
+    script(src='./preview.js')
